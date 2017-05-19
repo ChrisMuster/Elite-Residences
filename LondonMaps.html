@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elite Residences</title>
+	<meta charset="utf-8"> 
+	<meta name="description" content="Elite Residences is a luxury serviced property management business, specialising in luxury serviced apartments, full property management, corporate leasing and relocation services.">
+	<meta name="keywords" content="Elite Residences, luxury, elite, property management, serviced apartments, corporate leasing">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="./manifest.json">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#a78b2c">
+	<meta name="apple-mobile-web-app-title" content="Elite Residences">
+	<meta name="application-name" content="Elite Residences">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="msapplication-TileImage" content="./mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+<!--Set id for back to top div-->
+	<div id="Top"></div>
+<!--Main nav bar and logo for 3 different screen sizes-->
+	<div class="navBar">
+		<div class="logoBig logo">
+			<a href="./index.html"><img src="images/EliteCrown-I-2.png" class="elitelogo"></a>
+		</div>
+
+		<div class="logoSmall logo">
+			<a href="./index.html"><img src="images/EliteCrown-I-3.png" class="elitelogo"></a>
+		</div>
+
+		<div class="logoXSmall logo">
+			<a href="./index.html"><img src="images/ERSmall2.png" class="elitelogo"></a>
+		</div>
+
+		<div class="mainNav">
+			<a href="./index.html">Home</a>
+			<a href="./LuxuryRental.html">Luxury Rental</a>
+			<a href="./PropertyManagement.html">Property Management</a>
+			<a href="./CorporateLeasing.html">Corporate Leasing</a>
+			<a href="#Top">London Maps</a>
+			<a href="./ContactUs.php">Contact Us</a>
+		</div>
+
+	<!--Menu dropbutton in 2 sizes, and dropdown menu -->
+		<div class="dropdown">
+			<div onclick="dropClick()" id="dropBig" class="dropbtn">
+				Menu
+			</div>
+
+			<div onclick="dropClick()" id="dropSmall" class="dropbtn">
+				Menu
+			</div>
+
+		    <div id="myDropdown" class="dropdown-content">
+		        <a href="./index.html">Home</a>
+		        <a href="./LuxuryRental.html">Luxury Rental</a>
+				<a href="./PropertyManagement.html">Property Management</a>
+			    <a href="./CorporateLeasing.html">Corporate Leasing</a>
+				<a href="#Top">London Maps</a>
+				<a href="./ContactUs.php" class="underline">Contact Us</a>
+		    </div>
+		</div>
+	</div>
+
+	<div class="gap"></div>
+
+	<div id="headnav">
+		<div id="main-map" class="header">
+			<a href="#central">London Map</a>
+			<a href="#tube">Underground Map</a>
+			<a href="#servalert">Service Alerts</a>
+		</div>
+	</div>
+
+	<div id="central"></div>
+
+	<div class="header">
+		<p>Central London</p>
+	</div>
+
+	<div id="map"></div>
+
+	<div id="tube"></div>
+
+	<div id="undermap"><p>London Underground <a href="https://docs.google.com/viewerng/viewer?url=http://eliteresidences.co.uk/standard-tube-map.pdf">(Click here for mobile-friendly pdf tube map)</a></p></div>
+
+	<div id="tubemap">
+		<script language="JavaScript" src="https://www.tfl.gov.uk/tfl/syndication/widgets/tubemap/tubemap-iframe-stretchy.js"></script>
+	</div>
+
+	<div id="servalert"></div>
+
+	<div id="alerts"><p>Service Alerts</p></div>
+
+	<div class="servbox">
+		<div id="servicealerts">
+			<script language="JavaScript" src="https://www.tfl.gov.uk/tfl/syndication/widgets/serviceboard/embeddable/serviceboard-iframe-stretchy.js"></script>
+		</div>
+	</div>
+
+
+	<footer>
+		<h4><a href="#Top">Back to Top</a></h4>
+
+		<div class="footer-links">
+			<div class="foot-link1">
+				<p>See what Elite Residences can do for you today!</p>
+				<a href="./index.html">Home/About Elite Residences </a> |
+				<a href="./LuxuryRental.html"> Luxury Rental </a> |
+				<a href="./PropertyManagement.html"> Property Management </a> |
+				<a href="./CorporateLeasing.html"> Corporate Leasing </a> |
+				<a href="./LondonMaps.html"> London Maps </a> |
+				<a href="./ContactUs.php"> Contact Us</a>
+			</div>
+			<div class="foot-link2">
+				<img src="images/ERBlack.png" alt="Small Elite Residences logo">
+			</div>
+		</div>
+
+		<h5>Website design &copy; <a href="http://chrismuster.co.uk/">Chris Muster 2017</a></h5>
+
+		<h6>Note: All pictures used are for illustrative purposes only, and are meant to represent the quality of the actual properties available.</h6>
+	</footer>
+
+	<script>
+	    function initMap() {
+        // Create a map object and specify the DOM element for display.
+        	var london = {lat: 51.50722, lng: -0.127566};
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	        	center: london,
+	        	zoom: 13,
+	        	scrollwheel: false,
+				draggable: true
+	        });
+	        var marker = new google.maps.Marker({
+          		position: london,
+          		map: map
+        	});
+        }
+
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZvuZvv5KnlbNnshWWVfmI68PeqlH-2V8&callback=initMap" async defer></script>
+
+	<script src="jquery-3.2.0.min.js"></script>
+
+	<script type="text/javascript" src="eliteResidences.js"></script>
+
+</body>
+</html>

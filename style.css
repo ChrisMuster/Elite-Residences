@@ -1,0 +1,852 @@
+body {
+	font-family: serif;
+	margin: 0;
+	/*background-color: LightGrey;*/
+    background-color: white;
+}
+
+
+/*Main navigation, logo and display, all pages css*/
+.navBar {
+    position: fixed;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    z-index: 300;
+}
+
+.logo {
+    background-color: black;
+    max-height: 98px;
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+.logoBig {
+    margin-left: 46px;
+}
+
+.logoSmall {
+    margin-left: 6px;
+}
+
+.logoXSmall {
+    margin-left: 6px;
+}
+
+.mainNav {
+    background-color: black;
+    float: left;
+    padding: 0px;
+    margin: 30px 0px 0px 40px;
+}
+
+.mainNav a {
+    float: left;
+    display: block;
+    color: #a78b2c;
+    text-align: center;
+    text-decoration: none;
+    font-family: serif;
+    border-top: 2px solid #a78b2c;
+    border-bottom: 2px solid #a78b2c;
+    padding: 9px 8px;
+    font-size: 1em;
+}
+
+.mainNav a:hover, .mainNav a:focus {
+    background-color: #a78b2c;
+    color: white;
+}
+
+.show {
+    display: block !important;
+}
+
+/*The small logo and the big drop menu button will not appear on screens less than 550px*/
+@media screen and (max-width: 550px) {
+    .logoSmall {
+        display: none;
+    }
+
+    #dropBig {
+        display: none;
+    }
+}
+
+/*The extra small logo and the small drop menu button will not show on screens above 549px*/
+@media screen and (min-width: 549px) {
+    .logoXSmall {
+        display: none;
+    }
+
+    #dropSmall {
+        display: none;
+    } 
+}
+
+/*The big logo will not show on screens less than 640px*/
+@media screen and (max-width: 640px) {
+    .logoBig {
+        display: none;
+    }
+}
+
+/*The small logo will not show on screens above 639px*/
+@media screen and (min-width: 639px) {
+    .logoSmall {
+        display: none;
+    }
+}
+
+/*The main navigation menu will not show on screens less than 1244px*/
+@media screen and (max-width: 1244px) {
+    .mainNav {
+        display: none;
+    }
+}
+
+/*The Menu button and the dropdown menu will not show on screens above 1243px*/
+@media screen and (min-width: 1243px) {
+    .dropbtn {
+        display: none;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+}
+#myDropdown {
+    z-index: 210;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.dropdown a:hover {
+    background-color: #a78b2c;
+    color: white;
+}
+
+.dropbtn {
+    background-color: black;
+    color: #a78b2c;
+    padding: 9px 5px;
+    border-top: 2px solid #a78b2c;
+    border-bottom: 2px solid #a78b2c;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    margin: 10px 10px 0px 0px;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-size: 1.5em;
+}
+
+#dropSmall {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #a78b2c;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 5px;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+    border-top: 2px solid #a78b2c;
+    margin: 0px;
+    padding: 5px;
+}
+
+.underline {
+    border-bottom: 2px solid #a78b2c;
+}
+
+div.mainDisplay {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: -4px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    position: relative;
+}
+
+.mainDisplay img {
+    width: 100%;
+    height: 100%;
+}
+
+.welcome {
+    margin: 0px;
+    text-decoration: none;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    position: absolute;
+    left: 30%;
+    right: 35%;
+    top: 52.5%;
+    background-color: rgba(0,0,0,0.7);
+    min-width: 40%;
+    border-top: 2px solid #a78b2c; 
+    border-bottom: 2px solid #a78b2c;
+    border-radius: 5px;
+    color: #a78b2c;
+}
+
+@media screen and (min-width: 400px) {
+    .welcome {
+        font-size: 24px;
+    }
+}
+
+.welcome:hover {
+    background-color: #a78b2c;
+    color: white;
+}
+/*End of Main navigation, logo and display, all pages css*/
+
+/*All pages*/
+.section-container {
+    padding-top: 100px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/*All pages*/
+.info {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+
+/*All pages*/
+.info p {
+    margin: 28px 0px 28px 0px;
+}
+
+/*All pages*/
+.line-color {
+    height: 4px;
+    background-color: #a78b2c;
+    border: none;
+    width: 50%;
+}  
+
+
+/*Home page css*/
+#About {
+    margin-top: -100px;
+}
+
+#about-us {
+    background-color: white;
+    padding-bottom: 15px;
+}
+
+#prop-man {
+    background-color: black;
+    color: #a78b2c;
+    padding: 15px;
+}
+
+#prop-man p {
+    font-size: 1.17em;
+}
+
+#prop-man a {
+    text-decoration: none;
+    color: #a78b2c;
+}
+
+#prop-man a:hover {
+    background-color: #a78b2c;
+    color: white;
+    border-radius: 5px;
+}
+
+#other-serv {
+    background-color: white;
+    padding: 15px 0px;
+}
+
+#other-serv p.no-topmarg {
+    margin-top: 0px;
+}
+/*End of Home page css*/
+
+
+/*All pages*/
+.no-padmarg {
+    padding: 0px;
+    margin: 0px;
+    color: #a78b2c;
+}
+
+/*Luxury Rental page css*/
+#LuxRent {
+    margin-top: -100px;
+}
+
+#luxury-rental ul {
+    text-align: left;
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #a78b2c;
+}
+
+#luxury-rental p.no-bottommarg {
+    margin-bottom: 0px;
+}
+
+#luxury-rental p.some-bottommarg {
+    margin-bottom: 20px;
+}
+
+#luxury-rental p.no-topmarg {
+    margin-top: 0px;
+}
+
+#luxury-rental h3 {
+    color: #a78b2c;
+}
+
+#luxury-rental h3 a {
+    color: #a78b2c;
+    text-decoration: none;
+}
+
+#luxury-rental h3 a:hover {
+    background-color: #a78b2c;
+    color: white;
+    border-radius: 5px;
+}
+
+.listing {
+    margin: auto;
+    max-width: 450px;
+    border: 2px solid #a78b2c;
+    border-radius: 5px;
+    background-color: black;
+}
+/*End of Luxury Rental page css*/
+
+
+/*Property Management page css*/
+#PropManage {
+    margin-top: -100px;
+}
+
+#management {
+    color: black;
+}
+
+#management p.proptitle {
+    color: #a78b2c;
+    font-size: 1.17em;
+}
+
+#management h3 {
+    color: #a78b2c;
+}
+
+#management a {
+    text-decoration: none;
+    color: #a78b2c;
+}
+
+#management a:hover {
+    background-color: #a78b2c;
+    color: white;
+    border-radius: 5px;
+}
+/*End of Property Management page css*/
+
+
+/*Corporate Leasing page css*/
+#CorpLease {
+    margin-top: -100px;
+}
+
+#corp-lease p.corptitle {
+    color: #a78b2c;
+    font-size: 1.17em;
+}
+
+#corp-lease h3 {
+    color: #a78b2c;
+}
+
+#corp-lease a {
+    text-decoration: none;
+    color: #a78b2c;
+}
+
+#corp-lease a:hover {
+    background-color: #a78b2c;
+    color: white;
+    border-radius: 5px;
+}
+
+#corp-lease p.no-topmarg {
+    margin-top: 0px;
+}
+
+#corp-lease p.no-padmarg {
+    padding: 0px;
+    margin: 0px;
+}
+/*End of Corporate Leasing page css*/
+
+
+/*London Maps page css*/
+.gap {
+    height: 100px;
+}
+
+#headnav {
+    margin: auto;
+    text-align: center;
+    z-index: 200;
+}
+
+@media screen and (max-width: 876px) {
+    .header a {
+        font-size: .90em;
+        font-family: serif;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .header p {
+        padding-top: 40px;
+    }
+    #undermap p {
+        padding-top: 40px;
+    }
+    #alerts p {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .header p {
+        padding-top: 65px;
+    }
+    #undermap p {
+        padding-top: 65px;
+    }
+    #alerts p {
+        padding-top: 65px;
+    }
+}
+
+.header {
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    color: #a78b2c;
+    font-size: 2em;
+    font-family: "Cinzel", serif;
+}
+
+.header a {
+    display: inline-block;
+    text-decoration: none;
+    color: #a78b2c;
+    margin: auto;
+    padding: 5px 10px;
+}
+
+.header a:hover {
+    color: white;
+    background-color: #a78b2c;
+}
+
+.header p {
+    margin-top: 160px;
+    margin-bottom: 5px;
+}
+
+.mindthegap {
+    height: 50px;
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    color: #a78b2c;
+    font-size: 2em;
+    font-family: "Cinzel", serif;
+}
+
+#main-map {
+    position: fixed;
+    margin: auto;
+    background-color: black;
+    width: 100%;
+    z-index: 200;
+}
+
+#map {
+    height: 500px;
+    width: 90%;
+    padding-top: 105px;
+    padding-bottom: 25px;
+    margin: auto;
+    border: 2px solid #a78b2c;
+}
+
+#undermap {
+    color: #a78b2c;
+    font-size: 2em;
+    font-family: "Cinzel", serif;
+    width: 90%;
+    margin: auto;
+}
+
+#undermap p {
+    margin-top: 160px;
+    margin-bottom: 5px;
+}
+
+#undermap a {
+    text-decoration: none;
+    color: #a78b2c;
+    font-size: 0.7em;
+}
+
+#undermap a:hover {
+    background-color:#a78b2c;
+    color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#tubemap {
+    width: 90%;
+    height: 100%;
+    margin: 10px auto;
+    border: 2px solid #a78b2c;
+}
+
+#tubemap p {
+    margin-bottom: 5px;
+}
+
+.servbox {
+    width: 90%;
+    margin: auto;
+}
+
+#alerts {
+    color: #a78b2c;
+    font-size: 2em;
+    font-family: "Cinzel", serif;
+    width: 90%;
+    margin: auto;
+}
+
+#alerts p {
+    margin-top: 160px;
+    margin-bottom: 5px;
+}
+
+#servicealerts {
+    width: 50%;
+    margin: 0px;
+}
+
+#central {
+    margin-top: -100px;
+}
+
+#tube {
+    margin-top: -100px;
+}
+
+#servalert {
+    margin-top: -100px;
+}
+
+/*End of London Maps page css*/
+
+
+/*Contact Us page css*/
+
+label {
+    display: block;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+header {
+    font-size: 2em;
+    width: 90%;
+}
+
+header p {
+    margin: 20px 20px 0px 20px;
+}
+
+.sent {
+    margin: 20px 20px 0px 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.body {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    font-family: "Cinzel", serif;
+    color: #a78b2c;
+}
+
+.rightside {
+    display: inline-block;
+    float: left;
+    min-height: 403px;
+    margin: 20px 0px 20px 20px;
+    padding: 10px;
+    min-width: 40%;
+    font-family: serif;
+    color: #a78b2c;
+    background-color: black;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 1.75em;
+}
+
+@media screen and (max-width: 380px) {
+    .rightside {
+        font-size: 1.25em;
+    }
+}
+
+form {
+    display: inline-block;
+    float: left;
+    margin: 20px 60px 20px 20px;
+    min-width: 40%;
+    background-color: black;
+    padding: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 1.25em;
+}
+
+input, textarea {
+    height: 27px;
+    background: #efefef;
+    border: 2px solid #a78b2c;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 1em;
+    color: #3a3a3a;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input {
+    width: 60%;
+}
+
+textarea {
+    width: 90%;
+    height: 213px;
+}
+
+input:focus, textarea:focus {
+    border: 3px solid #97d6eb;
+}
+
+#submit {
+    max-width: 100px;
+    height: 40px;
+    padding: 7px 10px 10px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #a78b2c;
+    background-color: black;
+    border: 2px solid #a78b2c;
+}
+
+#submit:hover {
+    background-color: #a78b2c;
+    color: white;
+}
+
+/*End of Contact Us page css*/
+
+
+/*All pages*/
+#elite {
+    font-family: 'candlescript_demo_versionRg', serif;
+    font-size: 1.75em;
+    color: #a78b2c;
+    font-weight: normal;
+}
+
+/*All pages*/
+#Res {
+    font-family: "Cinzel", serif;
+    font-size: 1.45em;
+    color: #a78b2c;
+    font-weight: normal;
+}
+
+/*All pages*/
+footer {
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+/*All pages*/
+footer h4 {
+    padding: 10px 10px 5px 10px;
+    margin: 5px;
+}
+
+/*All pages*/
+footer h5 {
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+}
+
+/*All pages*/
+footer h6 {
+    margin: 5px;
+    padding-left: 10px;
+}
+
+/*All pages*/
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/*All pages*/
+footer a:hover {
+    color: #a78b2c;
+}
+
+/*All pages*/
+.footer-links {
+    margin: auto;
+    width: 90%;
+    border-top: 2px solid #a78b2c;
+    border-bottom: 2px solid #a78b2c;
+    padding: 3px 10px 10px 10px;
+}
+
+/*All pages*/
+.footer-links a {
+    text-decoration: none;
+}
+
+/*All pages*/
+.footer-links a:hover {
+    background-color: #a78b2c;
+    color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/*All pages*/
+.footer-links p {
+    font-size: 1.45em;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/*All pages*/
+.foot-link1 {
+    display: inline-block;
+    width: 80%;
+    margin: 0px;
+}
+
+/*All pages*/
+.foot-link2 {
+    display: inline-block;
+    width: 15%;
+    margin: 0px;
+    text-align: center;
+}
+
+/*All pages*/
+.foot-link2 img {
+    margin-top: 5px;
+    height: 65px;
+    width: 200px;
+}
+
+/*All pages*/
+@media screen and (max-width: 970px) {
+    .foot-link1 {
+        width: 100%;
+    }
+    .foot-link2 {
+        display: none;
+    }
+}
+
+/*All pages*/
+.clear {
+  clear: both;
+}
+
+.backlink {
+    text-decoration: none;
+    color: #a78b2c;
+    padding: 5px;
+}
+
+.backlink:hover {
+    background-color: #a78b2c;
+    color: white;
+}

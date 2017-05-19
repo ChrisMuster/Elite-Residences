@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elite Residences</title>
+	<meta charset="utf-8"> 
+	<meta name="description" content="Elite Residences is a luxury serviced property management business, specialising in luxury serviced apartments, full property management, corporate leasing and relocation services.">
+	<meta name="keywords" content="Elite Residences, luxury, elite, property management, serviced apartments, corporate leasing">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="./manifest.json">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#a78b2c">
+	<meta name="apple-mobile-web-app-title" content="Elite Residences">
+	<meta name="application-name" content="Elite Residences">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="msapplication-TileImage" content="./mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+<!--Set id for back to top div-->
+	<div id="Top"></div>
+<!--Main nav bar and logo for 3 different screen sizes-->
+	<div class="navBar">
+		<div class="logoBig logo">
+			<a href="./index.html"><img src="images/EliteCrown-I-2.png" class="elitelogo"></a>
+		</div>
+
+		<div class="logoSmall logo">
+			<a href="./index.html"><img src="images/EliteCrown-I-3.png" class="elitelogo"></a>
+		</div>
+
+		<div class="logoXSmall logo">
+			<a href="./index.html"><img src="images/ERSmall2.png" class="elitelogo"></a>
+		</div>
+
+		<div class="mainNav">
+			<a href="./index.html">Home</a>
+			<a href="./LuxuryRental.html">Luxury Rental</a>
+			<a href="#PropManage">Property Management</a>
+			<a href="./CorporateLeasing.html">Corporate Leasing</a>
+			<a href="./LondonMaps.html">London Maps</a>
+			<a href="./ContactUs.php">Contact Us</a>
+		</div>
+
+	<!--Menu dropbutton in 2 sizes, and dropdown menu -->
+		<div class="dropdown">
+			<div onclick="dropClick()" id="dropBig" class="dropbtn">
+				Menu
+			</div>
+
+			<div onclick="dropClick()" id="dropSmall" class="dropbtn">
+				Menu
+			</div>
+
+		    <div id="myDropdown" class="dropdown-content">
+		        <a href="./index.html">Home</a>
+		        <a href="./LuxuryRental.html">Luxury Rental</a>
+				<a href="#PropManage">Property Management</a>
+			    <a href="./CorporateLeasing.html">Corporate Leasing</a>
+				<a href="./LondonMaps.html">London Maps</a>
+				<a href="./ContactUs.php" class="underline">Contact Us</a>
+		    </div>
+		</div>
+	</div>
+
+<!--Main landing pic-->
+	<div class="mainDisplay">
+
+		<img src="images/eliteinterior3.jpg" alt="Luxury Living Room">
+		<a href="#PropManage" class="welcome">Property Management Services</a>
+		
+	</div>
+
+	<div id="PropManage"></div>
+
+<!--Property Management Description-->
+	<div id="management" class="section-container">
+		<div class="info">
+			<hr class="line-color">
+
+			<p class="proptitle"><span id="elite">Elite </span><span id="Res">Residences </span>Property Management Services</p>
+
+			<p>We all know renting your property with an estate agent can be a time-consuming and costly process, and you may not achieve the full rental price that you wanted. You also have the headache of managing the property, the tenants and daily maintenance if anything goes wrong, unless you appoint an estate agent to fully manage the property - which is usually a very expensive service and leaves a huge dent in your rental returns.</p>
+			<p>Here at Elite Residences we offer full property management services. We will take on your property and manage it and maintain it to the highest standards.</p>
+			<p>We understand how hard you worked for your home and how it can be quite daunting renting it to a stranger. With Elite Residences, we will give you peace of mind and security, sound in the knowledge that we will professionally manage your home as if it were our own, with daily cleaning and maintenance, and weekly inspections of the property. We have a team of qualified plumbers, builders and electricians on call 24/7 so in the eventuality that anything goes wrong we have a team on call to get it resolved quickly and efficiently.</p>
+			<p>Let your property direct through Elite Residences so you can start earning from day one. With flexible rental agreements from 1 year to 5 years with mutual break clauses and annual Rental Increase to benefit you and give you peace of mind.</p>
+
+			<h3><a href="./ContactUs.php">Get in contact with us</a> today to rent your property immediately.</h3>
+
+			<hr class="line-color">
+
+		</div>
+	</div>
+
+	<footer>
+		<h4><a href="#Top">Back to Top</a></h4>
+
+		<div class="footer-links">
+			<div class="foot-link1">
+				<p>See what Elite Residences can do for you today!</p>
+				<a href="./index.html">Home/About Elite Residences </a> |
+				<a href="./LuxuryRental.html"> Luxury Rental </a> |
+				<a href="./PropertyManagement.html"> Property Management </a> |
+				<a href="./CorporateLeasing.html"> Corporate Leasing </a> |
+				<a href="./LondonMaps.html"> London Maps </a> |
+				<a href="./ContactUs.php"> Contact Us</a>
+			</div>
+			<div class="foot-link2">
+				<img src="images/ERBlack.png" alt="Small Elite Residences logo">
+			</div>
+		</div>
+
+		<h5>Website design &copy; <a href="http://chrismuster.co.uk/">Chris Muster 2017</a></h5>
+
+		<h6>Note: All pictures used are for illustrative purposes only, and are meant to represent the quality of the actual properties available.</h6>
+	</footer>
+
+	<script src="jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="eliteResidences.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elite Residences</title>
+	<meta charset="utf-8"> 
+	<meta name="description" content="Elite Residences is a luxury serviced property management business, specialising in luxury serviced apartments, full property management, corporate leasing and relocation services.">
+	<meta name="keywords" content="Elite Residences, luxury, elite, property management, serviced apartments, corporate leasing">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="./manifest.json">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#a78b2c">
+	<meta name="apple-mobile-web-app-title" content="Elite Residences">
+	<meta name="application-name" content="Elite Residences">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="msapplication-TileImage" content="./mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+<!--Set id for back to top div-->
+	<div id="Top"></div>
+<!--Main nav bar and logo for 3 different screen sizes-->
+	<div class="navBar">
+		<div class="logoBig logo">
+			<a href="./index.html"><img src="images/EliteCrown-I-2.png" class="elitelogo"></a>
+		</div>
+
+		<div class="logoSmall logo">
+			<a href="./index.html"><img src="images/EliteCrown-I-3.png" class="elitelogo"></a>
+		</div>
+
+		<div class="logoXSmall logo">
+			<a href="./index.html"><img src="images/ERSmall2.png" class="elitelogo"></a>
+		</div>
+
+		<div class="mainNav">
+			<a href="./index.html">Home</a>
+			<a href="./LuxuryRental.html">Luxury Rental</a>
+			<a href="./PropertyManagement.html">Property Management</a>
+			<a href="#CorpLease">Corporate Leasing</a>
+			<a href="./LondonMaps.html">London Maps</a>
+			<a href="./ContactUs.php">Contact Us</a>
+		</div>
+
+	<!--Menu dropbutton in 2 sizes, and dropdown menu -->
+		<div class="dropdown">
+			<div onclick="dropClick()" id="dropBig" class="dropbtn">
+				Menu
+			</div>
+
+			<div onclick="dropClick()" id="dropSmall" class="dropbtn">
+				Menu
+			</div>
+
+		    <div id="myDropdown" class="dropdown-content">
+		        <a href="./index.html">Home</a>
+		        <a href="./LuxuryRental.html">Luxury Rental</a>
+				<a href="./PropertyManagement.html">Property Management</a>
+			    <a href="#CorpLease">Corporate Leasing</a>
+				<a href="./LondonMaps.html">London Maps</a>
+				<a href="./ContactUs.php" class="underline">Contact Us</a>
+		    </div>
+		</div>
+	</div>
+
+<!--Main landing pic-->
+	<div class="mainDisplay">
+
+		<img src="images/Interior1.jpg" alt="Luxury Living Room">
+		<a href="#CorpLease" class="welcome">Corporate Leasing</a>
+		
+	</div>
+
+	<div id="CorpLease"></div>
+
+<!--Property Management Description-->
+	<div id="corp-lease" class="section-container">
+		<div class="info">
+			<hr class="line-color">
+
+			<p class="corptitle"><span id="elite">Elite </span><span id="Res">Residences </span>Corporate Leasing</p>
+
+			<p class="corptitle no-padmarg">Relocation Specialists for business travellers</p>
+
+			<p class="no-topmarg">Elite Residences provide excellent serviced apartment accommodation for the corporate market.  All our properties are located in central London, close to Hyde Park, and well-connected for the business centres of Mayfair, Kensington, Belgravia and Bayswater and with convenient transport links to other areas of the city.</p>
+
+			<p>Our apartments provide an ideal alternative to a hotel stay and offer the benefit of space, privacy and comfort for guests to enjoy a home-from-home experience.  All the apartments are modern in design and include high quality furnishings and bed linen, fully-equipped kitchens, free Wi-Fi and the very latest in-room entertainment.</p>
+
+			<p>A 24-Hour Concierge Service, security and scrupulous standards of housekeeping are available at all the properties as well as a wide range of extra options including airport transfers, daily breakfast delivery service, restaurant recommendations and theatre bookings.</p>
+
+			<p>Our serviced apartments offer flexible, cost effective accommodation to suit individual and specific requirements – whether it’s a short stay Studio or long stay family relocation, we have the apartment and location that is right for your needs.</p>
+
+			<h3>To set up a Corporate Account or to discuss rates and availability with us, go to our <a href="./ContactUs.php">Contact page.</a></h3>
+
+			<hr class="line-color">
+
+		</div>
+	</div>
+
+	<footer>
+		<h4><a href="#Top">Back to Top</a></h4>
+
+		<div class="footer-links">
+			<div class="foot-link1">
+				<p>See what Elite Residences can do for you today!</p>
+				<a href="./index.html">Home/About Elite Residences </a> |
+				<a href="./LuxuryRental.html"> Luxury Rental </a> |
+				<a href="./PropertyManagement.html"> Property Management </a> |
+				<a href="./CorporateLeasing.html"> Corporate Leasing </a> |
+				<a href="./LondonMaps.html"> London Maps </a> |
+				<a href="./ContactUs.php"> Contact Us</a>
+			</div>
+			<div class="foot-link2">
+				<img src="images/ERBlack.png" alt="Small Elite Residences logo">
+			</div>
+		</div>
+
+		<h5>Website design &copy; <a href="http://chrismuster.co.uk/">Chris Muster 2017</a></h5>
+
+		<h6>Note: All pictures used are for illustrative purposes only, and are meant to represent the quality of the actual properties available.</h6>
+	</footer>
+
+	<script src="jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="eliteResidences.js"></script>
+
+</body>
+</html>
